@@ -4,7 +4,7 @@
 
     <artifactId>client</artifactId>
     <packaging>jar</packaging>
-    <name>Sample Project - Client</name>
+    <name>Github sample project - Client</name>
 
     <parent>
         <groupId>com.jobhunt</groupId>
@@ -14,6 +14,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.jobhunt</groupId>
+            <artifactId>server</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
@@ -22,11 +28,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.jobhunt</groupId>
-            <artifactId>server</artifactId>
         </dependency>
 
         <dependency>

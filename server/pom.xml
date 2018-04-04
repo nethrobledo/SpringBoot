@@ -4,7 +4,7 @@
 
     <artifactId>server</artifactId>
     <packaging>jar</packaging>
-    <name>Sample Project - Server</name>
+    <name>Github sample project - Server</name>
 
     <parent>
         <groupId>com.jobhunt</groupId>
