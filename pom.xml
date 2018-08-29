@@ -9,6 +9,10 @@
     <modules>
         <module>client</module>
         <module>server</module>
+        <module>eureka-registration-service</module>
+        <module>core-service</module>
+        <module>broker-service</module>
+        <module>money-transfer-service</module>
     </modules>
 
     <properties>
