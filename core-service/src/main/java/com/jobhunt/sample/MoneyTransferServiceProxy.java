@@ -1,5 +1,6 @@
 package com.jobhunt.sample;
 
+import com.jobhunt.sample.bean.QuoteConversionBean;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

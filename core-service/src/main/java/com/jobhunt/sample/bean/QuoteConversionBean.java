@@ -1,4 +1,4 @@
-package com.jobhunt.sample;
+package com.jobhunt.sample.bean;
 
 public class QuoteConversionBean {
 
