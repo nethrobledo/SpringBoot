@@ -13,6 +13,7 @@
         <module>core-service</module>
         <module>broker-service</module>
         <module>money-transfer-service</module>
+        <module>ofx-service</module>
     </modules>
 
     <properties>

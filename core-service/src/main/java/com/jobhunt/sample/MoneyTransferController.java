@@ -12,12 +12,17 @@ import java.math.BigDecimal;
 @RestController
 public class MoneyTransferController {
 
-    @Autowired MoneyTransferServiceProxy moneyTransferServiceProxy;
+    @Autowired
+    OfxServiceProxy ofxServiceProxy;
 
-    @GetMapping("/money-transfer/quote/{currency}/{amount}")
-    public QuoteConversionBean getQuote(@PathVariable String currency, @PathVariable BigDecimal amount) {
-        return moneyTransferServiceProxy.getQuote(currency, amount);
+    @GetMapping("/ofx/quote/{currency}/{amount}")
+    public QuoteConversionBean getOfx(@PathVariable String currency, @PathVariable BigDecimal amount) {
+        return ofxServiceProxy.getOfx(currency, amount);
     }
 
+    //@GetMapping("/westernunion/quote/{currency}/{amount}")
+    //public QuoteConversionBean getWesternUnion(@PathVariable String currency, @PathVariable BigDecimal amount) {
+    //    return moneyTransferServiceProxy.getWesternUnion(currency, amount);
+    //}
 
 }

@@ -9,11 +9,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.math.BigDecimal;
 
 @EnableAutoConfiguration
-@FeignClient(name="money-transfer-service")
-public interface MoneyTransferServiceProxy {
+@FeignClient(name="ofx-service")
+public interface OfxServiceProxy {
 
-    @GetMapping("/money-transfer/quote/{currency}/{amount}")
-    QuoteConversionBean getQuote(@PathVariable("currency") String currency,
+    @GetMapping("/ofx/quote/{currency}/{amount}")
+    QuoteConversionBean getOfx(@PathVariable("currency") String currency,
                                  @PathVariable("amount") BigDecimal amount);
 
+    //@GetMapping("/westernunion/quote/{currency}/{amount}")
+    //QuoteConversionBean getWesternUnion(@PathVariable("currency") String currency,
+    //                           @PathVariable("amount") BigDecimal amount);
 }
