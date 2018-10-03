@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.math.BigDecimal;
 
 @RestController
-public class OfxQuoteController {
+public class FxQuoteController {
 
-    private Logger LOGGER = LoggerFactory.getLogger(OfxQuoteController.class);
+    private Logger LOGGER = LoggerFactory.getLogger(FxQuoteController.class);
 
     @Autowired
     private QuoteService quoteService;

@@ -9,10 +9,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @SpringBootApplication
 @EnableCaching
 @EnableDiscoveryClient
-public class OfxServer {
+public class FxServer {
 
     public static void main(String args[]) {
-        SpringApplication.run(OfxServer.class, args);
+        SpringApplication.run(FxServer.class, args);
     }
 
 }
