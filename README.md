@@ -1,5 +1,7 @@
 # SpringBoot
-Sample project to demonstrate the use of Spring Boot, Microservices and REST APIs. The project is also using Oauth2 Rest to handle authorisation from a third party provider.
+Sample project to demonstrate the use of Spring Boot, Microservices and REST APIs. The project is also using Oauth2 Rest to handle authorisation from a third party provider. 
+
+Note: Some services like fx-service cannot be tested properly without proper credentials from third party provider. This unfortunately cannot be uploaded.
 
 ## Test using maven
 * Generate project distribution using mvn clean install command on root folder.
